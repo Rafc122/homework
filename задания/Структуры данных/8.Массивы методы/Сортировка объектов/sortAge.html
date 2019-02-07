@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <p>
+        <script>
+          function compareAge(personA, personB) {
+            return personA.age - personB.age;
+          }
+          var vasya = { name: "Вася", age: 23 };
+          var masha = { name: "Маша", age: 18 };
+          var vovochka = { name: "Вовочка", age: 6 };
+          var people = [ vasya , masha , vovochka ]; 
+          people.sort(compareAge);
+          for(var i = 0; i < people.length; i++) {
+            alert(people[i].name);
+          }
+        </script>
+    </p>
+</body>
+</html>
